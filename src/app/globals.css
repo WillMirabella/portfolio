@@ -1,26 +1,50 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #EFE4D2;
+  --foreground: #131D4F;
+  --primary: #254D70;
+  --accent: #954C2E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0efff;
+  --color-primary-200: #bae0ff;
+  --color-primary-300: #7cc8ff;
+  --color-primary-400: #36adff;
+  --color-primary-500: #0891ff;
+  --color-primary-600: #254D70;
+  --color-primary-700: #025aa5;
+  --color-primary-800: #064e87;
+  --color-primary-900: #0b4270;
+  --color-accent-50: #fef7f0;
+  --color-accent-100: #feede0;
+  --color-accent-200: #fcd9c6;
+  --color-accent-300: #f9bf9e;
+  --color-accent-400: #f59e72;
+  --color-accent-500: #f1804a;
+  --color-accent-600: #954C2E;
+  --color-accent-700: #c2410c;
+  --color-accent-800: #9a3412;
+  --color-accent-900: #7c2d12;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
 }
